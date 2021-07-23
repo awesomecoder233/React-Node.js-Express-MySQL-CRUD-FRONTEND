@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, Route } from "react-router-dom";
+import AddTutorial from "./components/add-tutorial.component";
 
 class App extends Component {
   render() {
@@ -25,9 +26,9 @@ class App extends Component {
         </nav>
         <div>
           <switch>
-            <Route exact path={["/", "/tutorials"]} component={TutorialsList} />
+            {/* <Route exact path={["/", "/tutorials"]} component={TutorialsList} /> */}
             <Route exact path="/add" component={AddTutorial} />
-            <Route exact path="/tutorials/:id" component={Tutorial} />
+            {/* <Route exact path="/tutorials/:id" component={Tutorial} /> */}
           </switch>
         </div>
       </div>
