@@ -8,8 +8,8 @@ import TutorialsList from "./components/tutorialslist.component";
 class App extends Component {
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <div className="header">
+        <nav className="navbar navbar-expand navbar-dark bg-dark navarea">
           <a href="/tutorials" className="navbar-brand">
             Arman
           </a>
@@ -27,11 +27,11 @@ class App extends Component {
           </div>
         </nav>
         <div>
-          <switch>
+          <div>
             <Route exact path={["/", "/tutorials"]} component={TutorialsList} />
             <Route exact path="/add" component={AddTutorial} />
             <Route exact path="/tutorials/:id" component={Tutorial} />
-          </switch>
+          </div>
         </div>
       </div>
     );

@@ -22,7 +22,7 @@ export default class Tutorial extends Component {
         };
     }
     componentDidMount() {
-        this.getTutorial(this.props.match.param.id);
+        this.getTutorial(this.props.match.params.id);
     }
 
     onChangeTitle(e) {

@@ -77,7 +77,7 @@ export default class TutorialsList extends Component {
         this.setState({
           tutorials: response.data
         });
-        console.log(response.data);
+        console.log(this.state.searchTitle);
       })
       .catch(e => {
         console.log(e);
